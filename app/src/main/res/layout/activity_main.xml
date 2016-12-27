@@ -17,6 +17,8 @@
     </WebView>
 
     <TextView
+        android:padding="16dp"
+        android:text="Hi"
         android:layout_weight="1"
         android:id="@+id/textView"
         android:layout_width="match_parent"
