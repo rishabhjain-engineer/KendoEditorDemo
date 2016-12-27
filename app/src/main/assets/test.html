@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='http://kendo.cdn.telerik.com/2016.3.1028/styles/kendo.common.min.css'/>
+    <link rel='stylesheet' href='http://kendo.cdn.telerik.com/2016.3.1028/styles/kendo.silver.min.css'/>
+    <link rel='stylesheet' href='http://kendo.cdn.telerik.com/2016.3.1028/styles/kendo.mobile.all.min.css'/>
+
+
+    <script src='http://code.jquery.com/jquery-1.12.4.min.js'></script>
+    <script src='http://kendo.cdn.telerik.com/2016.3.1028/js/kendo.all.min.js'>
+
+    </script>
+</head>
+<body>
+<textarea id='editor' style ='height:593px;'>
+
+</textarea>
+<script>
+$('#editor').kendoEditor(
+{tools:
+['bold', 'italic', 'underline', 'strikethrough','fontName', 'fontSize','justifyLeft', 'justifyCenter',
+'justifyRight', 'justifyFull','insertUnorderedList', 'insertOrderedList','indent', 'outdent', 'formatBlock','subscript', 'superscript','viewHtml']
+,value:''}
+);
+</script>
+</body>
+</html>
