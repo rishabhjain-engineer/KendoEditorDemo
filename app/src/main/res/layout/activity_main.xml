@@ -8,6 +8,7 @@
     tools:context="com.example.rishabh.kendoeditordemo.MainActivity">
 
     <WebView
+        android:layout_margin="5dp"
         android:layout_weight="1"
         android:id="@+id/htmlView"
         android:layout_width="match_parent"
@@ -16,13 +17,7 @@
 
     </WebView>
 
-    <TextView
-        android:padding="16dp"
-        android:text="Hi"
-        android:layout_weight="1"
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+
 
 
 </LinearLayout>

@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel='stylesheet' href='http://kendo.cdn.telerik.com/2016.3.1028/styles/kendo.common.min.css'/>
-    <link rel='stylesheet' href='http://kendo.cdn.telerik.com/2016.3.1028/styles/kendo.silver.min.css'/>
-    <link rel='stylesheet' href='http://kendo.cdn.telerik.com/2016.3.1028/styles/kendo.mobile.all.min.css'/>
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel='stylesheet'
+          href='http://kendo.cdn.telerik.com/2016.3.1028/styles/kendo.common.min.css'/>
+    <link rel='stylesheet'
+          href='http://kendo.cdn.telerik.com/2016.3.1028/styles/kendo.silver.min.css'/>
+    <link rel='stylesheet'
+          href='http://kendo.cdn.telerik.com/2016.3.1028/styles/kendo.mobile.all.min.css'/>
     <script src='js/jquery-1.12.4.min.js'></script>
-    <script src='js/kendo.all.min.js'>
+    <script src='js/kendo.all.min.js'></script>
 
+    <script type="text/javascript">
+
+        function getHTMLContent() {
+            Interface.showComment();
+            }
     </script>
+    <style>
+        .btnClas {display: block; width: 100%; margin:0px auto; background:#00a79d; padding:10px 20px; border:none; text-align:centre; font-size:15px; color:#fff; margin-top:15px; border-radius:5px;}
+        .btnClas:hover {background:#008080;}
+        .btnClas:focus {outline:none;}
+    </style>
 </head>
+
 <body>
-<textarea id='editor'>
-Hello World!
+<textarea id='editor' style="width:100%; height:175% margin:25px; font-size:25px;" >
+
 </textarea>
-<script>
-$('#editor').kendoEditor(
-{tools:
-['bold', 'italic', 'underline', 'strikethrough','fontName', 'fontSize','justifyLeft', 'justifyCenter',
-'justifyRight', 'justifyFull','insertUnorderedList', 'insertOrderedList','indent', 'outdent', 'formatBlock','subscript', 'superscript','viewHtml']
-,value:''}
-);
+
+<script id="dataScript">
+    $('#editor').kendoEditor({tools: ['bold', 'italic', 'underline', 'strikethrough','fontName', 'fontSize','justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull','insertUnorderedList', 'insertOrderedList','indent', 'outdent', 'formatBlock','subscript', 'superscript','viewHtml'],value:''});
 </script>
+<input type="button" class="btnClas" value="Submit your Comment" onClick="getHTMLContent()"/>
+
+
 </body>
 </html>
+
+
